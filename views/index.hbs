@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <title>Totu pastry tienda online</title>
+    <script src="https://kit.fontawesome.com/0ca3a347ea.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        {{> header }}
+        <div class="nav">
+            <ul class="mermeladas">
+                <a href="mermeladas" class="quicksand">Mermeladas</a>
+            </ul>
+            <ul class="conservas">
+                <a href="conservas" class="quicksand">Conservas</a>
+            </ul>
+            <ul class="contacto">
+                <a href="contacto" class="quicksand">Contacto</a>
+            </ul>
+        </div>
+        <div class="carrousel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <img src="" alt="" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="" alt="" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="" alt="" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="" alt="" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="card quicksand">
+                <img class="card-imagen" src="assets/mermelada1.jpeg" alt="dfgd">
+                <h4 id="mermelada1" class="card-nombre"></h4>
+                <h4 id="precio1" class="card-precio"></h4>
+                <button class="card-boton" type="button">
+                    <a href="carrito" class="quicksand">Agregar al carrito</a>
+                </button>
+            </div>
+
+            <div class="card quicksand">
+                <img class="card-imagen" src="assets/mermelada1.jpeg" alt="dfgd">
+                <h4 id="mermelada2" class="card-nombre"></h4>
+                <h4 id="precio2" class="card-precio"></h4>
+                <button class="card-boton" type="button">
+                    <a href="carrito" class="quicksand">Agregar al carrito</a>
+                </button>
+            </div>
+
+            <div class="card quicksand">
+                <img class="card-imagen" src="assets/mermelada1.jpeg" alt="dfgd">
+                <h4 id="mermelada3" class="card-nombre"></h4>
+                <h4 id="precio3" class="card-precio"></h4>
+                <button class="card-boton" type="button">
+                    <a href="carrito" class="quicksand">Agregar al carrito</a>
+                </button>
+            </div>
+
+            <div class="card quicksand">
+                <img class="card-imagen" src="assets/mermelada1.jpeg" alt="dfgd">
+                <h4 id="mermelada4" class="card-nombre"></h4>
+                <h4 id="precio4" class="card-precio"></h4>
+                <button class="card-boton" type="button">
+                    <a href="carrito" class="quicksand">Agregar al carrito</a>
+                </button>
+            </div>
+
+            <div class="card quicksand">
+                <img class="card-imagen" src="assets/mermelada1.jpeg" alt="dfgd">
+                <h4 id="mermelada5" class="card-nombre"></h4>
+                <h4 id="precio5" class="card-precio"></h4>
+                <button class="card-boton" type="button">
+                    <a href="carrito" class="quicksand">Agregar al carrito</a>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    {{> footer }}
+
+
+
+    <script src="javascript/flickity.pkgd.min.js"></script>
+    <script src="javascript/datos.js"></script>
+
+</body>
+</html>

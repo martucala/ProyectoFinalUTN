@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+body {
+    margin: 0 3vw;
+    background-color: rgb(248, 243, 236);
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 500rem));
+    grid-template-rows: 120px 70px auto auto auto;
+    grid-template-areas: 
+    
+    "header-principal"
+    "nav"
+    "carrusel"
+    "container"
+    "footer";
+
+    
+}
+
+.header-principal {
+    grid-area: header-principal;
+    display: flex;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.container {
+    grid-area: container;
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1rem, 320px));
+    grid-template-rows: 1fr;
+    gap: 46.8px;
+    justify-content: center;
+
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.info {
+    width: 20%;
+}
+
+.mediosdepago {
+    width: 20%;
+}
+
+.envio {
+    width: 20%;
+}
+
+.suscripcion {
+    width: 40%;
+    
+}
+
+.logo {
+    width: 20%;
+}
+
+.marca {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2vw;
+}
+
+.login {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totulogo {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* external css: flickity.css */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  .carrousel {
+    display: flex;
+    justify-content: center;
+    grid-area: carrusel;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-imagen {
+    width: 320px;
+}
+
+.card-nombre {
+    text-align: center;
+}
+
+.card-precio {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(156, 22, 22);
+    font-weight: 700;
+}
+
+.grid-container-contacto {
+    grid-template-columns: repeat(auto-fill, minmax(2rem, 400rem));
+    grid-template-rows: 200px 100px auto auto;
+    grid-template-areas: 
+    
+    "header-principal"
+    "nav"
+    "form-contacto"
+    "footer";
+}
+
+.form-contacto {
+    grid-area: form-contacto;
+    display: flex;
+}
+
+
+
+.form2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.quicksand {
+    font-family: 'Quicksand', sans-serif;
+}  
+
+.btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(250, 202, 224);
+    border: none;
+    font-size: 18px;
+}
+
+.card-boton {
+    height: 30px;
+    width: 150px;
+    border: none;
+    background-color: rgb(250, 202, 224);
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(156, 22, 22);
+    font-weight: 700;
+}
+
+.nosotras {
+    padding: 20px 0;
+}
+
+.mdp-parrafo {
+    padding: 20px 0;
+}
+
+.envio-parrafo {
+    padding: 20px 0;
+}
+
+.newsletter {
+   padding: 20px 0 0 0;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-input {
+    width: 250px;
+}
+
+.contenedor-formulario {
+    width: 500px;
+}
+
+.formulario {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedor-formulario2 {
+    width: 300px;
+}
